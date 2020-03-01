@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  app:
+    build: .
+    container_name: "trail_simulator"
+    tty: true
+    volumes:
+      - ./simulator:/go/src/trail_simulator/simulator
